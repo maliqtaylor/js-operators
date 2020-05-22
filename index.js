@@ -39,13 +39,13 @@ console.log(++x);
    and then logged onto the 
    console               */
 
-console.log(`y before: ${y++}`);//value hasnt incremented yet
+console.log(`y before: ${y++}`);// value hasnt incremented yet
 /* since increment(++) comes
    after y, the value of y
    will be logged onto the 
    console first and then
    incremented               */
-console.log(`y after ${y}`);//value increments 
+console.log(`y after ${y}`);// value increments 
 
 // Decrement (--)
 
@@ -56,13 +56,13 @@ console.log(--x);
    and then logged onto the 
    console               */
 
-console.log(`y before: ${y--}`);//value hasnt decremented yet
+console.log(`y before: ${y--}`);// value hasnt decremented yet
 /* since decrement(++) comes
    after y, the value of y
    will be logged onto the 
    console first and then
    decremented               */
-console.log(`y after ${y}`);//value decrements 
+console.log(`y after ${y}`);// value decrements 
 
 //------------------------------------------------------------------------------------------------------------------------
 
@@ -92,6 +92,55 @@ console.log('1' === 1);// false because strict (same value, different type)
 // Equality (Loose)
 console.log('1' == 1);
 
+//------------------------------------------------------------------------------------------------------------------------
+
+// Ternary
+
+/* If a customer has more than
+   100 points they are a 'gold'
+   customer, otherwise they are 
+   a silver customer.  */
+
+let points = 105;
+let type = points >= 100 ? 'gold' : 'silver';
+
+//------------------------------------------------------------------------------------------------------------------------
+
+// Logical ( && , || , ! )
+
+// AND ( && ) 
+console.log(true && true);// logs true because both operands are true
+console.log(false && true);// logs false because one operand is false
+
+// OR ( || )
+
+console.log(true || true);// logs true because both operands are true
+console.log(false || true);// logs true because one operand is true
+
+// NOT ( ! )
+let valid = true
+let rejection = !valid
+console.log('rejected', rejection);
+
+//------------------------------------------------------------------------------------------------------------------------
+
+/* Falsy and Truthy 
+
+a. undefined
+b. null
+c. 0
+d. false
+e. ''
+f. NaN
+
+(any value that is not falsy -> truthy)
+
+Falsy and Truthy */
+
+console.log(false || 'maliq');// will log 'maliq' (truthy)
+console.log(false || 1 || 2);// will log 1 (short circuting)
+
+//------------------------------------------------------------------------------------------------------------------------
 
 
 
